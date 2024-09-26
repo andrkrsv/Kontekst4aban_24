@@ -1,0 +1,1 @@
+print((lambda x: "YES" if x == x[::-1] else "NO")(input().lower()))

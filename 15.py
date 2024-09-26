@@ -1,0 +1,1 @@
+print((lambda x: sum(x)/len(x))(list(map(int, (' '.join(input().split(';')).split())))))

@@ -1,0 +1,12 @@
+def find_unique_users(existing_users, new_requests):
+    existing_set = set(existing_users)
+    unique_new_users = [user for user in new_requests if user not in existing_set]
+    return sorted(unique_new_users)
+
+n = int(input())
+existing_users = set(input().split())
+k = int(input())
+new_requests = input().split()
+
+result = find_unique_users(existing_users, new_requests)
+print(' '.join(result))
